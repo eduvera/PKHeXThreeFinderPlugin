@@ -99,7 +99,7 @@ namespace PKHeXThreeFinderPlugin
                         if (current_box_mon.EncryptionConstant % 100 == 0)
                         {
                             dunsparce_3_count++;
-                            output_message += "Three segmented Dunsparce found in box #" + (i / 30).ToString() + " (" + sav.GetBoxData(i / 30) + ") slot " + (i % 30).ToString() + "\n";
+                            output_message += "Three segmented Dunsparce found in box #" + (i / 30).ToString() + " (" + ((SAV9SV)sav).GetBoxName(i / 30) + ") slot " + (i % 30).ToString() + "\n";
                         }
                     }
                     else if (current_box_mon.Species == (int)Species.Tandemaus)
@@ -108,7 +108,7 @@ namespace PKHeXThreeFinderPlugin
                         if (current_box_mon.EncryptionConstant % 100 == 0)
                         {
                             tandemaus_3_count++;
-                            output_message += "Family of Three Tandemaus found in box #" + (i / 30).ToString() + " (" + sav.GetBoxData(i / 30) + ") slot " + (i % 30).ToString() + "\n";
+                            output_message += "Family of Three Tandemaus found in box #" + (i / 30).ToString() + " (" + ((SAV9SV)sav).GetBoxName(i / 30) + ") slot " + (i % 30).ToString() + "\n";
                         }
                     }
                 }
