@@ -74,7 +74,7 @@ namespace PKHeXThreeFinderPlugin
                         if (current_party_mon.EncryptionConstant % 100 == 0)
                         {
                             dunsparce_3_count++;
-                            output_message += "Three segmented Dunsparce found in party slot " + i.ToString() + "\n";
+                            output_message += "Three segmented Dunsparce found in party slot " + (i + 1).ToString() + "\n";
                         }
                         
                     }
@@ -85,7 +85,7 @@ namespace PKHeXThreeFinderPlugin
                         if (current_party_mon.EncryptionConstant % 100 == 0)
                         {
                             tandemaus_3_count++;
-                            output_message += "Family of Three Tandemaus found in party slot " + i.ToString() + "\n";
+                            output_message += "Family of Three Tandemaus found in party slot " + (i + 1).ToString() + "\n";
                         }
                     }
                 }
